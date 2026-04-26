@@ -1,0 +1,43 @@
+The Master Prompt: LEVIT8 Core Engine
+This prompt is designed for a Large Language Model (LLM) or a specialized Code Assistant to generate the foundational architecture for the app, incorporating your COMPLIANCE MD requirements and the specific tech stack.
+
+The Prompt
+System Role: You are a Lead Full-Stack Engineer and DSP (Digital Signal Processing) Specialist.
+
+Objective: Scaffold a PWA named LEVIT8 using Next.js 14+ (App Router), Tailwind CSS, and Firebase. The app is a "Shazam for Musicians" that identifies song titles, BPM, and Musical Key in real-time.
+
+1. Compliance Framework: > Initialize a directory /app/compliance containing the COMPLIANCE MD FOR FUTURE APPS template. This must include placeholder routes for:
+
+Cookie Banner (Global Component)
+
+Terms of Service
+
+Privacy Policy (must include audio recording consent)
+
+Cookie Policy
+
+Accessibility Statement
+
+2. Technical Requirements:
+
+Audio Processing: Integrate the Web Audio API for real-time frequency analysis. Implement an AudioAnalyzer component that handles microphone input and visualizes the waveform.
+
+Logic: Provide the logic for Onset Detection (for BPM) and Chromagram Mapping (for Key Detection) using client-side JavaScript to minimize server costs.
+
+PWA Configuration: Configure next-pwa with a manifest.json and service workers for offline capability and "Install to Home Screen" functionality.
+
+Monetization: Integrate Stripe SDK for a "Pro" tier subscription.
+
+3. Design Language:
+
+Use a high-contrast "Antigravity" dark theme using Tailwind.
+
+Primary color: Electric Cyan (representing the signal).
+
+Secondary color: Deep Space Purple.
+
+4. Data Management:
+
+Use Firebase Firestore to store identified song history and Firebase Auth for user sessions.
+
+Output: Provide the file structure, the package.json dependencies, and the core useAudioProcessor React hook.

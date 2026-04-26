@@ -8,6 +8,8 @@ const withPWA = require('next-pwa')({
 
 const nextConfig: NextConfig = {
   /* config options here */
+  // @ts-ignore - Turbopack config is required for Webpack fallback in Next.js 16
+  turbopack: {},
 };
 
 export default withPWA(nextConfig);
