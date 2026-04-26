@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ChevronRight, Music, Zap, Shield } from 'lucide-react';
 
@@ -24,9 +25,16 @@ export default function LandingPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-gray-400">Project Antigravity Live</span>
           </div>
           
-          <h1 className="text-7xl md:text-9xl font-black tracking-tighter leading-none">
-            LEVIT<span className="text-electric-cyan">8</span>
-          </h1>
+          <div className="flex justify-center">
+            <Image 
+              src="/levit8.png" 
+              alt="LEVIT8" 
+              width={600} 
+              height={200} 
+              className="w-full max-w-lg object-contain"
+              priority
+            />
+          </div>
           
           <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto font-medium">
             The next-generation audio engine for musicians. 

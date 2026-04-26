@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useAudioProcessor } from '@/hooks/useAudioProcessor';
 import { AudioAnalyzer } from '@/components/AudioAnalyzer';
@@ -20,14 +21,20 @@ export default function AnalyzePage() {
 
       <div className="w-full max-w-2xl flex flex-col items-center space-y-12 relative z-10">
         {/* Header Section */}
-        <div className="text-center space-y-2">
-          <motion.h1 
+        <div className="text-center space-y-4">
+          <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl font-black tracking-tighter text-white"
+            className="flex justify-center"
           >
-            LEVIT<span className="text-electric-cyan">8</span>
-          </motion.h1>
+            <Image 
+              src="/levit8.png" 
+              alt="LEVIT8" 
+              width={240} 
+              height={80} 
+              className="h-16 w-auto object-contain"
+            />
+          </motion.div>
           <p className="text-gray-400 font-mono text-xs uppercase tracking-[0.3em]">
             Core Engine V1.0 // Antigravity
           </p>
